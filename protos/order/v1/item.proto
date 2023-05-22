@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package order.v1;
+
+option go_package = "github.com/sergoslav/go-proto-experimental/gen/go/order/v1;order";
+
+
+import "catalog/v1/product.proto";
+
+
+message Item {
+    int64 id = 1;
+    catalog.v1.Product product = 2;
+    // Product product = 2;
+}
+

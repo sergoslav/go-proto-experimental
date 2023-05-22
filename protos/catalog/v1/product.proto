@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package catalog.v1;
+
+option go_package = "github.com/sergoslav/go-proto-experimental/gen/go/catalog/v1;catalog";
+
+message Product {
+    int64 id = 1;
+    string name = 2;
+}

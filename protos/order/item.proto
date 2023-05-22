@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package order;
+
+option go_package = "order/v1;order";
+
+
+import "catalog/product.proto";
+
+
+// message Product {
+//   int64 id = 1;
+//   string name = 2;
+// }
+
+
+message Item {
+    int64 id = 1;
+    catalog.Product product = 2;
+    // Product product = 2;
+}
+
